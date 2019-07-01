@@ -72,6 +72,7 @@ public class IliasScraper {
 			{
 				String name = IliasCourseFormatter.formatCourseName(aTag.text());
 				courses.add(new IliasFolder(name, url, null));
+				System.out.println(name);
 			}
 		}
 		return courses;
